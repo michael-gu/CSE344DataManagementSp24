@@ -1,0 +1,4 @@
+What are some of the pros and cons of using a cloud-hosted DBMS? Would you recommend it to a fellow student for tinkering/experimentation?  
+What about recommending it to future co-workers for their project? If your answer differed, why?
+
+At the scale that we are using the cloud-hosted DBMS, I would definitely recommend the service to students. Many of the pros of using a service like SQLServer
