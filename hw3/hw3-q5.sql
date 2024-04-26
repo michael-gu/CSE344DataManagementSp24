@@ -17,3 +17,9 @@ WHERE f1.origin_city = 'Seattle WA'
         AND f6.dest_city = f3.dest_city
     )
 ORDER BY city ASC;
+-- complicated query
+-- join the flights tables to get the 3 hop flights
+-- first NOT EXISTS ensures dest is not reachable directly
+-- seconod NOT EXISTS ensures dest is not reachable via one intermediate flight
+-- do not include seattle as a dest
+-- this should give us the query we want where we get all destinations that require at least two intermediate flights from seattle
