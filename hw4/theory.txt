@@ -1,0 +1,9 @@
+a) We have closures D+ = {B, D} and CE+ = {A, C, E}. We decompose R using CE+, giving us R1 = {A, C, E} and R2 = {B, C, D, E}
+
+b)
+
+c) A -> A, B -> B, C -> C, D -> D
+
+d) D -> A, A -> B, B -> C, C -> D
+
+e) A -> BCD, D -> ABC, B -> B, C -> C
