@@ -1,10 +1,10 @@
 -- part A
--- CREATE TABLE Sales (
---     name VARCHAR(16),
---     discount VARCHAR(16),
---     month VARCHAR(16),
---     price INTEGER
--- )
+CREATE TABLE Sales (
+    name VARCHAR(16),
+    discount VARCHAR(16),
+    month VARCHAR(16),
+    price INTEGER
+)
 
 -- part B
 -- FDs
