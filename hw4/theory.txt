@@ -1,9 +1,9 @@
-a) We have closures D+ = {B, D} and CE+ = {A, C, E}. We decompose R using CE+, giving us R1 = {A, C, E} and R2 = {B, C, D, E}
+a) We have closures D+ = {B, D} and CE+ = {A, C, E}. We decompose R using CE+, giving us R1 = {A, C, E} and R2 = {B, C, D, E}. R1 is now complete as CE is a superkey and all other closures are trivial for it. However, for R2, D+ is still not trivial, so we need to decompose R2. As a result, we get R3 = {B, D} and R4 = {C, D, E}. This must be BCNF as all closures are trivial for R3 and D is a superkey for R4. Thus, we have the final decomposition: R1 = {A, C, E}, R3 = {B, D} and R4 = {C, D, E}
 
-b)
+b) We have closures A+ = {A, E}, BC+ = {A, B, C, E}, and DE+ = {B, D, E}. We decompose S using BC+, giving us S1 = {A, B, C, E} and S2 = {B, C, D}. S2 is now complete as all closures are trivial for S2. However, for S1, A+ is still not trivial, so we need to decompose S1. We decompose S1 with A+, and as a result, we get decomposition S3 = {A, E} and S4 = {A, B, C}. This must be BCNF as for S3, A is a super key and the remaining closures are trivial. For S4, we know it is compliant as all closures are trivial. Thus, we have the final decomposition: S2 = {B, C, D},  S3 = {A, E} and S4 = {A, B, C}
 
 c) A -> A, B -> B, C -> C, D -> D
 
 d) D -> A, A -> B, B -> C, C -> D
 
-e) A -> BCD, D -> ABC, B -> B, C -> C
+e) B -> C, C -> B, A -> BD, D -> A

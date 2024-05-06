@@ -35,7 +35,7 @@ WHERE s1.name = s2.name AND s1.month != s2.month;
 
 -- part C
 -- We have R(month, name, price, discount), which we'll simplify to R(M, N, P, D). We have closures
--- M+ = {M, D}, N+ = {N, P}, M, P+ = {M, N, P, D}, and N, D+ = {M, N, P, D}
+-- M+ = {M, D}, N+ = {N, P}, MP+ = {M, N, P, D}, and ND+ = {M, N, P, D}
 -- 
 -- Let's use N+ to decompose R into R1 = {N, P} and R2 = {N, D, M} as N+ is non-trivial
 -- We now see that M+ is not trivial for R2, so we have to decompose R2 using it. Note that R1 is 
